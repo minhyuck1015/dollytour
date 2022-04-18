@@ -201,7 +201,7 @@ body{
     background: url(../images/trip_back.png) no-repeat bottom;
 }
 .trip_inner{
-    width: 1370px;
+    width: 1320px;
     margin: 20px auto;
 }
 .trip_box{
@@ -306,8 +306,11 @@ body{
 
 
 #camera{
-    height: 650px;
+    height: 600px;
     margin-bottom: 50px;
+    width: 100%;
+    overflow: hidden;
+   
 }
 .camera_box{
     width: 300px;
@@ -323,47 +326,45 @@ body{
     margin-top: 10px;
     margin-bottom: 35px;
 }
+
 .canon{
     float: left;
+    width: 50%;
+    height: 650px;
+    background: url(../images/camera01.png) no-repeat top right -50px;
+    overflow: hidden;
+    margin-top: -20px;
 }
+/*
 .canon_img{
-    float: left;
-}
+    width: 1000px;
+    height: 291px;
+    background: url(../images/camera01.png) no-repeat top left;
+}*/
 .canon_text{
     float: right;
     margin-left: 40px;
     margin-top: 50px;
 }
-.canon1{
-    font-size: 36px;
-    font-weight: bold;
-    font-style: italic;
-}
-.canon2{
-    margin-top: 30px;
-    font-family: 'LotteMartHappy';
-}
 .sony{
     float: right;
+    width: 50%;
+    height: 650px;
     text-align: right;
-    margin-top: -80px;
+    margin-top: -150px;
+    background: url(../images/camera02.png) no-repeat bottom 100px left -60px;
+    overflow: hidden;
 }
+/*
 .sony_img{
-    float: right;
-}
+    width: 1000px;
+    height: 274px;
+    background: url(../images/camera02.png) no-repeat bottom right;
+}*/
 .sony_text{
     float: left;
     margin-top: 50px;
     margin-right: 40px;
-}
-.sony1{
-    font-size: 36px;
-    font-weight: bold;
-    font-style: italic;
-}
-.sony2{
-    margin-top: 30px;
-    font-family: 'LotteMartHappy';
 }
 .bold_blue{
     font-weight: bold;
@@ -486,14 +487,14 @@ html, body {
 
 
 #footer{
-    height: 250px;
+    height: 280px;
     background-color: #474747;
 }
 .hr{
     border-bottom: 2px solid #707070;
 }
 .foot_inner{
-    width: 1320px;
+    width: 1300px;
     margin: 0 auto;
     position: relative;
     height: 135px;
@@ -504,7 +505,7 @@ html, body {
 .foot_inner ul li{
     float: left;
     text-align: center;
-    margin-right: 130px;
+    margin-right: 120px;
 }
 .foot_inner ul li:nth-child(7){
     margin-right: -20px;
@@ -521,7 +522,7 @@ html, body {
     margin-left: -100px;
 }
 .foot_down{
-    width: 1320px;
+    width: 1300px;
     margin: 0 auto;
 }
 .foot_text{
@@ -538,4 +539,7 @@ html, body {
 .foot_sns li{
     float: left;
     margin: 0 10px;
+}
+.foot_sns li:nth-child(4){
+    padding-right: 10px;
 }

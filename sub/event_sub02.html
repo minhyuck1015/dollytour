@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1320">
     <title>Dollytour</title>
-    <link rel="stylesheet" href="../css/event_sub01.css">
+    <link rel="stylesheet" href="../css/event_sub02.css">
 
     <!--header제이쿼리-->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
@@ -71,10 +71,41 @@
                 <tr class="box3">
                     <td colspan="2">
                         <div class="box_img">
-                            <img src="../images/sub1/sub01.jpg" alt="">
+                            <img src="../images/sub1/sub02.jpg" alt="">
                         </div>
                     </td>
                 </tr>
+                <div class="sel">
+                    <input type='checkbox' class="jeju"
+                        name='animal' 
+                        value='dog'
+                        onclick='checkOnlyOne(this)'/>
+                    <input type='checkbox' class="busan"
+                        name='animal' 
+                        value='cat' 
+                        onclick='checkOnlyOne(this)'/>
+                    <input type='checkbox' class="gang"
+                        name='animal' 
+                        value='rabbit' 
+                        onclick='checkOnlyOne(this)'/>
+                </div>
+                <script>
+                    function checkOnlyOne(element) {
+              
+                    const checkboxes 
+                        = document.getElementsByName("animal");
+              
+                    checkboxes.forEach((cb) => {
+                        cb.checked = false;
+                     })
+              
+                    element.checked = true;
+                    }
+                </script>
+            
+                <a href="javascript:alert('제출이 완료되었습니다.');" onfocus="this.blur()" class="select">
+                    제출
+                </a>
             </table>
         </div>
     </div>
