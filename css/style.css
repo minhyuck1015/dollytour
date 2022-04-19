@@ -14,14 +14,14 @@
     font-family: 'LotteMartHappy';
     font-style: normal;
     font-weight: 400;
-    src: url('http://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('http://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff2') format('woff2'), url('http://cdn.jsdelivr.net/korean-webfonts/1/corps/lottemart/LotteMartHappy/LotteMartHappyMedium.woff') format('woff');
   }
 
 @font-face {
     font-family: 'BareunBatang';
     font-style: normal;
     font-weight: 400;
-    src: url('http://cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFM.woff2') format('woff2'), url('http://cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFM.woff') format('woff');
+    src: url('https://cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFM.woff2') format('woff2'), url('http://cdn.jsdelivr.net/korean-webfonts/1/orgs/othrs/kpa/BareunBatang/BareunBatangOTFM.woff') format('woff');
   }
 
 *{margin: 0; padding: 0;}
@@ -76,27 +76,74 @@ body{
 .nav{
     float: right;
 }
-.nav li{
+.nav> li{
     float: left;
-    margin-left: 100px;
+    margin-left: 30px;
     margin-top: 10px;
     font-size: 20px;
 }
-.nav li:nth-child(5){
+.nav> li> a{
+    padding: 0 30px;
+    display: block;
+}
+.nav> li:nth-child(5){
     margin-right: -100px;
 }
-.nav li a:hover{
+.nav> li> a:hover{
+    color: #a1b5e6;
+}
+.nav> li:hover .sub{
+    display: block;
+}
+.sub{
+    text-align: center;
+    font-size: 16px;
+    z-index: 995;
+    position: absolute;
+}
+.sub li a{
+    color: #707070;
+}
+.sub1{
+    left: 912px;
+    top: 0;
+}
+.sub2{
+    left: 1035px;
+    top: 0;
+}
+.sub3{
+    left: 1175px;
+    top: 0;
+}
+.sub4{
+    left: 1330px;
+    top: 0;
+}
+.sub5{
+    left: 1455px;
+    top: 0;
+}
+.sub li{
+    margin-bottom: 10px;
+}
+.sub li a:hover{
     color: #a1b5e6;
 }
 .panel{
-    padding: 100px 0;
+    padding: 60px 0;
     display: none;
     width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 70px;
     left: 0;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.mar{
+    width: 1320px;
+    margin: 0 auto;
+    background-color: red;
 }
 .media{
     margin: 0 auto;
