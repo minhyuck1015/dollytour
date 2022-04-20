@@ -107,24 +107,24 @@ body{
     color: #707070;
 }
 .sub1{
-    left: 912px;
-    top: 0;
+    left: 622px;
+    top: -50px;
 }
 .sub2{
-    left: 1035px;
-    top: 0;
+    left: 740px;
+    top: -50px;
 }
 .sub3{
-    left: 1175px;
-    top: 0;
+    left: 880px;
+    top: -50px;
 }
 .sub4{
-    left: 1330px;
-    top: 0;
+    left: 1038px;
+    top: -50px;
 }
 .sub5{
-    left: 1455px;
-    top: 0;
+    left: 1165px;
+    top: -50px;
 }
 .sub li{
     margin-bottom: 10px;
@@ -137,11 +137,15 @@ body{
     display: none;
     width: 100%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
     position: absolute;
     top: 70px;
     left: 0;
-    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.28);
+}
+.mar{
+    width: 1320px;
+    margin: auto;
+    position: relative;
 }
 /*header*/
 
