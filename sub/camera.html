@@ -5,11 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1320">
     <title>Dollytour</title>
-    <link rel="stylesheet" href="../css/trip.css">
+    <link rel="stylesheet" href="../css/camera.css">
 
     <!--header제이쿼리-->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!--header제이쿼리-->
+
+    <!--카메라슬라이드css(링크),제이쿼리(스크립트)-->>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="../js/script.js"></script>
+    <!--슬라이드제이쿼리-->>
 </head>
 <body>
     <div id="header">
@@ -34,11 +40,11 @@
                         </div>
                     </div>
                 </a></li>
-                <li><a href="camera.html">카메라
+                <li><a href="#">카메라
                     <div class="panel header">
                         <div class="mar">
                             <ul class="sub sub2">
-                                <li><a href="camera.html">Dolly's카메라</a></li>
+                                <li><a href="#">Dolly's카메라</a></li>
                             </ul>
                         </div>
                     </div>
@@ -93,53 +99,66 @@
 
     <div id="event_main">
         <div class="event_text">
-            <p class="main_p1">DollyTour's 여행들</p>
-            <p class="main_p2">돌리투어만의 제주, 부산, 강원으로 나뉘는<br>
-                특색있는 여행을 만나보세요</p>
+            <p class="main_p1">DollyTour's 카메라</p>
+            <p class="main_p2">돌리투어와 여행을 떠날 때<br>카메라와 함께 떠나보세요</p>
         </div>
     </div>
 
-    <div id="event_list">
-        <h2>여행코스</h2>
-        <div class="banner">
-            <div class="banner_inner">
-                <a href="../sub/trip_sub01.html"><img src="../images/sub1/trip1.jpg" alt="banner" class="list_img"></a>
-                <p class="list1"><a href="../sub/trip_sub01.html">제주도 오름 코스 여행</a></p>
-                <p class="list2">도시 옆에 숨어있는 많은 오름들<br>  
-                    제주도 곳곳에 숨어있는 아름다운 오름으로의 여행<br>
-                    자세한 사항은 배너 또는 오른쪽 더보기를 클릭해주세요. </p>
-                <p class="list3">1박당 20,000원 ~ </p>
+    <div id="canon">
+        <div class="canon_top" data-aos="fade-down" data-aos-duration="1500">
+            <h3>Canon EOS R5</h3>
+            <div class="canon_top_right">
+                <img src="../images/sub1/canon_line.jpg" alt="">
             </div>
-            <p class="more"><a href="../sub/trip_sub01.html">더보기</a></p>
         </div>
-
-        <div class="line"></div>
-
-        <div class="banner">
-            <div class="banner_inner">
-                <a href="trip_sub01.html"><img src="../images/sub1/trip2.jpg" alt="banner" class="list_img"></a>
-                <p class="list1"><a href="trip_sub01.html">
-                바다와 도시가 공존하는 부산여행</a></p>
-                <p class="list2">부산의 대표 포토스팟으로 떠나 인생샷을 남겨보자<br>
-                    사진도 찍고 맛있는 부산의 먹거리도 먹으며 힐링여행<br>
-                    자세한 사항은 배너 또는 오른쪽 더보기를 클릭해주세요. </p>
-                <p class="list3">1박당 20,000원 ~ </p>
+        <div class="canon_bot">
+            <div class="canon_bot_left" data-aos="fade-right" data-aos-duration="1500">
+                <img src="../images/sub1/canon_img.png" alt="">
             </div>
-            <p class="more"><a href="trip_sub01.html">더보기</a></p>
+            <div class="canon_bot_right" data-aos="fade-left" data-aos-duration="1500">
+                <p class="p1">
+                    EOS R5의 이미지 센서, 영상 엔진 및 렌즈는 해상도, 노이즈<br>
+                    및 기타 광학적 특성을 포함한 이미지의 전반적인 측면을<br>
+                    최적화했습니다. 이로 인해 실제 픽셀 수를 초과하는 해상력을<br>
+                    가질 수 있게 되었고 약 5,060만 화소를 지닌 EOS 5Ds의<br>
+                    해상력을 능가합니다.
+                </p>
+                <p class="p2">
+                    뛰어난 성능으로 전문 포토그래퍼와 비디오그래퍼들이<br>
+                    사용함에 부족함이 없고, 하이아마추어나 취미 촬영을<br>
+                    즐기시는 분들에게 결과물을 한 단계 더 발전시켜줄 바디입니다.
+                </p>
+            </div>
         </div>
+    </div>
 
-        <div class="line"></div>
+    <div id="camera_back"></div>
 
-        <div class="banner">
-            <div class="banner_inner">
-                <a href="trip_sub01.html"><img src="../images/sub1/trip3.jpg" alt="banner" class="list_img"></a>
-                <p class="list1"><a href="trip_sub01.html">강원도에서 자연과 함께하는 여행</a></p>
-                <p class="list2">바쁘게 움직이는 도시에서 벗어나<br>
-                    자연에서 푹 쉬어보세요<br>
-                    자세한 사항은 배너 또는 오른쪽 더보기를 클릭해주세요 </p>
-                <p class="list3">1박당 20,000원 ~ </p>
+    <div id="sony">
+        <div class="sony_top" data-aos="fade-down" data-aos-duration="1500">
+            <h3>Sony α 7c</h3>
+            <div class="sony_top_left">
+                <img src="../images/sub1/sony_line.jpg" alt="">
             </div>
-            <p class="more"><a href="trip_sub01.html">더보기</a></p>
+        </div>
+        <div class="sony_bot">
+            <div class="sony_bot_right" data-aos="fade-left" data-aos-duration="1500">
+                <img src="../images/sub1/sony_img.png" alt="">
+            </div>
+            <div class="sony_bot_left" data-aos="fade-right" data-aos-duration="1500">
+                <p class="p1">
+                    EOS R5의 이미지 센서, 영상 엔진 및 렌즈는 해상도, 노이즈<br>
+                    및 기타 광학적 특성을 포함한 이미지의 전반적인 측면을<br>
+                    최적화했습니다. 이로 인해 실제 픽셀 수를 초과하는 해상력을<br>
+                    가질 수 있게 되었고 약 5,060만 화소를 지닌 EOS 5Ds의<br>
+                    해상력을 능가합니다.
+                </p>
+                <p class="p2">
+                    뛰어난 성능으로 전문 포토그래퍼와 비디오그래퍼들이<br>
+                    사용함에 부족함이 없고, 하이아마추어나 취미 촬영을<br>
+                    즐기시는 분들에게 결과물을 한 단계 더 발전시켜줄 바디입니다.
+                </p>
+            </div>
         </div>
     </div>
 
