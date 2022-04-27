@@ -1,4 +1,16 @@
 @font-face {
+    font-family: 'IBMPlexSansKR-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IBMPlexSansKR-Light';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
     font-family: 'IBMPlexSansKR-Regular';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
     font-weight: normal;
@@ -226,85 +238,149 @@ body{
     padding-right: 10px;
 }
 /*footer*/
-
-#canon{
+#about_top{
+    background: url(../images/sub1/about_top.jpg) no-repeat center top;
+    height: 789px;
+    width: 100%;
+    margin-top: 44px;
+}
+.about_top_text{
     width: 1320px;
     margin: 0 auto;
-    height: 450px;
-    margin-top: 80px;
-    margin-bottom: 80px;
 }
-.canon_top{
-    padding-bottom: 70px;
+.big_blue{
+    color: #233c6d;
 }
-.canon_top h3{
-    font-family: 'Godo';
-    font-weight: 500;
-    font-style: italic;
-    font-size: 36px;
-    float: left;
+.att1{
+    font-size: 70px;
+    line-height: 100px;
+    font-family: 'IBMPlexSansKR-Light';
+    margin: 175px 0 0 175px;
 }
-.canon_top_right{
-    float: right;
-    margin-top: -5px;
-}
-.canon_bot_left{
-    float: left;
-}
-.canon_bot_right{
-    float: right;
-    width: 480px;
+.att2{
+    margin: 50px 0 0 175px;
     font-family: 'IBMPlexSansKR-Regular';
-    font-size: 18px;
-    font-weight: 500;
+    font-size: 24px;
+    line-height: 43px;
+    font-weight: bold;
+}
+#about_middle{
+    height: 720px;
+}
+.about_img{
+    width: 1920px;
+    position: relative;
+    margin: 0 auto;
+}
+.about_img1{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.about_img2{
+    position: absolute;
+    top: 315px;
+    right: 335px;
+}
+.about_middle_text{
+    width: 1320px;
+    margin: 0 auto;
+}
+.amt{
+    font-family: 'IBMPlexSansKR-Regular';
+    position: absolute;
+    top: 70px;
+    right: 405px;
+    text-align: center;
+    color: #192845;
+}
+.amt1{
+    font-size: 72px;
+}
+.amt2{
+    font-size: 50px;
+    line-height: 36px;
+}
+.amt3{
+    font-size: 50px;
+    line-height: 72px;
+}
+.amt4{
+    line-height: 90px;
+}
+.about_bot{
+    width: 1320px;
+    margin: 0 auto;
+    height: 768px;
+    position: relative;
+}
+.about_img3{
+    position: absolute;
+    z-index: 1;
+    top: 84px;
+    left: 140px;
+}
+.about_img4{
+    position: absolute;
+    z-index: 10;
+    left: 475px;
+    top: 364px;
+}
+.abt_top{
+    position: absolute;
+    left: 782px;
+    top: 138px;
+    font-family: 'IBMPlexSansKR-Regular';
+    font-weight: bold;
+    color: #192845;
+}
+.abt1{
+    font-size: 97px;
+}
+.abt_small{
+    font-size: 60px;
+}
+.abt2{
+    font-size: 20px;
+    margin-top: 45px;
+}
+.abt_bot{
+    font-family: 'IBMPlexSansKR-Regular';
+    position: absolute;
+    left: 900px;
+    top: 360px;
+    font-size: 16px;
     line-height: 28px;
 }
-.canon_bot_right .p1{
-    text-align: right;
-}
-.canon_bot_right .p2{
-    text-align: right;
-}
-#camera_back{
-    height: 550px;
-    background: url(../images/sub1/camera_back.jpg) no-repeat center top;
-    background-attachment: fixed;
-}
-#sony{
+#about_tour{
     width: 1320px;
     margin: 0 auto;
     height: 500px;
-    margin-top: 80px;
 }
-.sony_top{
-    padding-bottom: 70px;
-}
-.sony_top h3{
-    font-family: 'Godo';
-    font-weight: 500;
-    font-style: italic;
-    font-size: 36px;
+#about_tour div{
+    width: 220px;
     float: left;
+    margin-right: 50px;
+    margin-top: 100px;
 }
-.sony_top_left{
-    float: right;
-    margin-top: -5px;
+.tour_box1{
+    margin-left: 160px;
 }
-.sony_bot_right{
-    float: right;
+.box_1{
+    font-family: 'IBMPlexSansKR-Bold';
+    font-size: 120px;
+    color: #192845;
+    font-weight: bold;
 }
-.sony_bot_left{
-    float: left;
-    width: 480px;
+.box_2{
+    font-family: 'IBMPlexSansKR-Bold';
+    font-size: 20px;
+    margin-top: 50px;
+}
+.box_3{
     font-family: 'IBMPlexSansKR-Regular';
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 28px;
-}
-.sony_bot_left .p1{
-    text-align: left;
-}
-.p2{
-    text-align: left;
-    margin-top: 110px;
+    font-size: 12px;
+    line-height: 20px;
+    margin-top: 20px;
+    font-weight: bold;
 }

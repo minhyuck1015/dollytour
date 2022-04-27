@@ -101,24 +101,24 @@ body{
     z-index: 995;
     position: absolute;
 }
+.sub5{
+    left: 585px;
+    top: -50px;
+}
 .sub1{
-    left: 622px;
+    left: 770px;
     top: -50px;
 }
 .sub2{
-    left: 740px;
+    left: 890px;
     top: -50px;
 }
 .sub3{
-    left: 880px;
+    left: 1028px;
     top: -50px;
 }
 .sub4{
-    left: 1038px;
-    top: -50px;
-}
-.sub5{
-    left: 1165px;
+    left: 1185px;
     top: -50px;
 }
 .sub li{
