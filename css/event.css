@@ -42,7 +42,7 @@ body{
     transition: all 0.5s;
   }
 #header{
-    height: 70px;
+    height: 80px;
     position: fixed;
     left: 0;
     top: 0;
@@ -51,24 +51,10 @@ body{
     z-index: 997;
     background-color: #fff;
 }
-.login{
-    width: 1320px;
-    margin: 0 auto;
-    font-size: 12px;
-    height: 10px;
-}
-.login ul{
-    float: right;
-    padding-right: 40px;
-}
-.login ul li{
-    float: left;
-    margin-left: 10px;
-}
 .header_inner{
-    height: 60px;
+    height: 70px;
     width: 1320px;
-    margin: 5px auto;
+    margin: 15px auto;
 }
 .logo{
     float: left;
@@ -77,6 +63,7 @@ body{
 }
 .nav{
     float: right;
+    margin-right: 157px;
 }
 .nav> li{
     float: left;
@@ -135,9 +122,9 @@ body{
     width: 100%;
     text-align: center;
     position: absolute;
-    top: 70px;
+    top: 80px;
     left: 0;
-    background-color: rgba(255, 255, 255, 0.28);
+    background-color: rgba(255, 255, 255, 0.8);
 }
 .mar{
     width: 1320px;
@@ -256,8 +243,8 @@ body{
 }
 .list_img{
     float: left;
-    padding-right: 20px;
-    margin-right: 20px;
+    padding-right: 40px;
+    margin-right: 35px;
     border-right: 2px dotted #e4e4e4;
 }
 .list1{
@@ -266,7 +253,7 @@ body{
     margin-bottom: 42px;
 }
 .list2{
-    font-size: 18px;
+    font-size: 15px;
     margin-bottom: 42px;
     font-family: 'IBMPlexSansKR-Regular';
 }
@@ -276,7 +263,7 @@ body{
 }
 .more{
     float: right;
-    padding-top: 120px;
+    padding-top: 205px;
     margin-right: 70px;
 }
 .more a{

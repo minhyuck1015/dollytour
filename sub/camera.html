@@ -20,65 +20,90 @@
 </head>
 <body>
     <div id="header">
-        <div class="login">
-            <ul>
-                <li><a href="#">로그인</a></li>
-                <li>｜</li>
-                <li><a href="#">회원가입</a></li>
-            </ul>
-        </div>
         <div class="header_inner">
             <h1><a href="../index.html" class="logo"><img src="../images/logo.png" alt=""></a></h1>
             <ul class="nav">
                 <li><a href="about.html">About
-                    <div class="panel header">
+                    <!-- <div class="panel header">
                         <div class="mar">
                             <ul class="sub sub5">
-                                <li><a href="about.html">DollyTour는</a></li>
+                                <li><a href="sub/about.html">DollyTour는</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                 </a></li>
                 <li><a href="trip.html">여행상품
-                    <div class="panel header">
-                        <div class="mar">
+                   <!-- <div class="panel header">
+                         <div class="mar">
                             <ul class="sub sub1">
-                                <li><a href="trip_sub01.html">제주</a></li>
-                                <li><a href="trip_sub01.html">부산</a></li>
-                                <li><a href="trip_sub01.html">강원</a></li>
+                                <li><a href="sub/trip_sub01.html">제주</a></li>
+                                <li><a href="sub/trip_sub01.html">부산</a></li>
+                                <li><a href="sub/trip_sub01.html">강원</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                 </a></li>
-                <li><a href="#">카메라
-                    <div class="panel header">
+                <li><a href="camera.html">카메라
+                    <!-- <div class="panel header">
                         <div class="mar">
                             <ul class="sub sub2">
-                                <li><a href="#">Dolly's카메라</a></li>
+                                <li><a href="sub/camera.html">Dolly's카메라</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                 </a></li>
                 <li><a href="event.html">이벤트
-                    <div class="panel header">
+                     <!--<div class="panel header">
                         <div class="mar">
                             <ul class="sub sub3">
-                                <li><a href="event.html">진행중인 이벤트</a></li>
+                                <li><a href="sub/event.html">진행중인 이벤트</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                 </a></li>
                 <li><a href="message.html">후기
-                    <div class="panel header">
+                    <!--<div class="panel header">
                         <div class="mar">
                             <ul class="sub sub4">
-                                <li><a href="message.html">후기</a></li>
+                                <li><a href="sub/message.html">후기</a></li>
                             </ul>
                         </div>
-                    </div>
+                    </div>-->
                 </a></li>
             </ul>
+            <div class="panel header">
+                <div class="mar">
+                    <ul class="sub sub5">
+                        <li><a href="about.html">DollyTour는</a></li>
+                    </ul>
+                    <ul class="sub sub1">
+                        <li><a href="trip_sub01.html">제주</a></li>
+                        <li><a href="trip_sub01.html">부산</a></li>
+                        <li><a href="trip_sub01.html">강원</a></li>
+                    </ul>
+                    <ul class="sub sub2">
+                        <li><a href="camera.html">Dolly's카메라</a></li>
+                    </ul>
+                    <ul class="sub sub3">
+                        <li><a href="event.html">진행중인 이벤트</a></li>
+                    </ul>
+                    <ul class="sub sub4">
+                        <li><a href="message.html">후기</a></li>
+                    </ul>
+                </div>
+            </div>
             <script>
+                $(function(){
+                            $(".panel").hide();
+                            $(".nav li").mouseenter(function(){
+                                $(".panel").stop().slideDown();
+                            });
+                            $("#header").mouseleave(function(){
+                            $(".panel").stop().slideUp();
+                             });
+                         });
+            </script>
+           <!--<script>
                 $(function(){
                     $(".nav a").mouseover(function(){
                         $(".panel").stop()
@@ -90,11 +115,11 @@
                         .slideUp();
                     });
                 });
-            </script>
+            </script>-->
         </div>
     </div>
-    <script src="../js/jquery-2.2.4.min.js"></script>
-	<script src="../js/main.js"></script>
+    <script src="js/jquery-2.2.4.min.js"></script>
+	<script src="js/main.js"></script>
 
     <div id="event_main">
         <div class="event_text">
