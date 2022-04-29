@@ -132,7 +132,7 @@ body{
     top: -50px;
 }
 .sub4{
-    left: 1185px;
+    left: 1202px;
     top: -50px;
 }
 .sub li{
@@ -355,13 +355,13 @@ body{
 #about_tour{
     width: 1320px;
     margin: 0 auto;
-    height: 500px;
+    height: 470px;
 }
 #about_tour div{
     width: 220px;
     float: left;
     margin-right: 50px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .tour_box1{
     margin-left: 160px;
