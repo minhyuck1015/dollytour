@@ -5,20 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1320">
     <title>Dollytour</title>
-    <link rel="stylesheet" href="../css/camera.css">
+    <link rel="stylesheet" href="../css/trip_sub01.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 
-    <!--header제이쿼리-->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <!--header제이쿼리-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script><!--aos js 연결-->		
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script><!-- 달력 -->
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../css/jquery-ui.css">
+    <link href="../css/index.css" rel="stylesheet" type="text/css">
 
-    <!--카메라슬라이드css(링크),제이쿼리(스크립트)-->>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="../js/script.js"></script>
-    
-    <!--슬라이드제이쿼리-->>
 </head>
 <body>
     <div id="header">
@@ -77,21 +73,21 @@
                 <div class="mar">
                     <div class="mar_inner">
                     <ul class="sub sub5">
-                        <li><a href="about.html">DollyTour는</a></li>
+                        <li><a href="sub/about.html">DollyTour는</a></li>
                     </ul>
                     <ul class="sub sub1">
-                        <li><a href="trip_sub01.html">제주</a></li>
-                        <li><a href="trip_sub01.html">부산</a></li>
-                        <li><a href="trip_sub01.html">강원</a></li>
+                        <li><a href="sub/trip_sub01.html">제주</a></li>
+                        <li><a href="sub/trip_sub01.html">부산</a></li>
+                        <li><a href="sub/trip_sub01.html">강원</a></li>
                     </ul>
                     <ul class="sub sub2">
-                        <li><a href="camera.html">Dolly's카메라</a></li>
+                        <li><a href="sub/camera.html">Dolly's카메라</a></li>
                     </ul>
                     <ul class="sub sub3">
-                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="sub/event.html">진행중인 이벤트</a></li>
                     </ul>
                     <ul class="sub sub4">
-                        <li><a href="message.html">후기</a></li>
+                        <li><a href="sub/message.html">후기</a></li>
                     </ul>
                 </div>
                 </div>
@@ -127,68 +123,111 @@
 
     <div id="event_main">
         <div class="event_text">
-            <p class="main_p1">DollyTour's 카메라</p>
-            <p class="main_p2">돌리투어와 여행을 떠날 때<br>카메라와 함께 떠나보세요</p>
+            <p class="main_p1">DollyTour's 여행들</p>
+            <p class="main_p2">돌리투어만의 제주, 부산, 강원으로 나뉘는<br>
+                특색있는 여행을 만나보세요</p>
         </div>
     </div>
 
-    <div id="canon">
-        <div class="canon_top" data-aos="fade-down" data-aos-duration="1500">
-            <h3>Canon EOS R5</h3>
-            <div class="canon_top_right">
-                <img src="../images/sub1/canon_line.jpg" alt="">
+    <div id="trip">
+        <div class="trip_top">
+            <div class="img">
+                <img src="../images/sub1/jeju_top.png" alt="trip">
+            </div>
+            <div class="text_box">
+                    <p class="p1">제주도 오름코스 여행</p>
+                    <p class="p2">Jeju rise road tour</p>
+                    <p class="p3">금오름, 사라오름, 용눈이오름, 새별오름, 도두봉</p>
+                    <p class="p4">1박 요금 최저가</p>
+                    <p class="p5">세금 포함</p>
+                    <p class="p6">20,000 <span class="mini">원~</span></p>
+                    <p class="p7">※2박부터 예약가능</p>
+                    <div class="jase">
+                        <p>자세한 문의사항은 010-2916-1250으로 전화주세요</p>
+                    </div>
             </div>
         </div>
-        <div class="canon_bot">
-            <div class="canon_bot_left" data-aos="fade-right" data-aos-duration="1500">
-                <img src="../images/sub1/canon_img.png" alt="">
+        
+        <div id="main_banner">
+
+            <div class="reservation">
+                
+                <div class="select">
+                    <input type="text" id="datepicker" placeholder="CHECK IN" class="day">
+                    <input type="text" id="datepicker1" placeholder="CHECK OUT" class="day">
+                    <select>
+                        <option>성인</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                    <select>
+                        <option>아동</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                    </select>
+                    <select class="pet_select">
+                        <option>반려동물</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                    </select>
+                </div>
+                <div class="search"><a href="#">검색</a></div>
             </div>
-            <div class="canon_bot_right" data-aos="fade-left" data-aos-duration="1500">
-                <p class="p1">
-                    EOS R5의 이미지 센서, 영상 엔진 및 렌즈는 해상도, 노이즈<br>
-                    및 기타 광학적 특성을 포함한 이미지의 전반적인 측면을<br>
-                    최적화했습니다. 이로 인해 실제 픽셀 수를 초과하는 해상력을<br>
-                    가질 수 있게 되었고 약 5,060만 화소를 지닌 EOS 5Ds의<br>
-                    해상력을 능가합니다.
-                </p>
-                <p class="p2">
-                    뛰어난 성능으로 전문 포토그래퍼와 비디오그래퍼들이<br>
-                    사용함에 부족함이 없고, 하이아마추어나 취미 촬영을<br>
-                    즐기시는 분들에게 결과물을 한 단계 더 발전시켜줄 바디입니다.
-                </p>
-            </div>
+        </div>
+
+<script>
+    AOS.init(); //에오스
+    
+    //달력 START
+    $( function() {
+    $( "#datepicker" ).datepicker();
+    } );
+    $.datepicker.setDefaults({
+    dateFormat: 'yy-mm-dd' //Input Display Format 변경
+    });
+    $.datepicker.setDefaults({
+    monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+    ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+    ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+    ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+    });
+    $( function() {
+    $( "#datepicker1" ).datepicker();
+    } );
+    $.datepicker.setDefaults({
+    dateFormat: 'yy-mm-dd' //Input Display Format 변경
+    });
+    $.datepicker.setDefaults({
+    monthNamesShort: ['1','2','3','4','5','6','7','8','9','10','11','12'] //달력의 월 부분 텍스트
+    ,monthNames: ['1월','2월','3월','4월','5월','6월','7월','8월','9월','10월','11월','12월'] //달력의 월 부분 Tooltip 텍스트
+    ,dayNamesMin: ['일','월','화','수','목','금','토'] //달력의 요일 부분 텍스트
+    ,dayNames: ['일요일','월요일','화요일','수요일','목요일','금요일','토요일'] //달력의 요일 부분 Tooltip 텍스트
+    });
+    //달력 END
+    
+    
+</script>
+
+    <div class="trip_bot">
+        <div class="trip_img"><img src="../images/sub1/trip_middle.jpg" alt=""></div>
         </div>
     </div>
-
-    <div id="camera_back"></div>
-
-    <div id="sony">
-        <div class="sony_top" data-aos="fade-down" data-aos-duration="1500">
-            <h3>Sony α 7c</h3>
-            <div class="sony_top_left">
-                <img src="../images/sub1/sony_line.jpg" alt="">
-            </div>
-        </div>
-        <div class="sony_bot">
-            <div class="sony_bot_right" data-aos="fade-left" data-aos-duration="1500">
-                <img src="../images/sub1/sony_img.png" alt="">
-            </div>
-            <div class="sony_bot_left" data-aos="fade-right" data-aos-duration="1500">
-                <p class="p1">
-                    EOS R5의 이미지 센서, 영상 엔진 및 렌즈는 해상도, 노이즈<br>
-                    및 기타 광학적 특성을 포함한 이미지의 전반적인 측면을<br>
-                    최적화했습니다. 이로 인해 실제 픽셀 수를 초과하는 해상력을<br>
-                    가질 수 있게 되었고 약 5,060만 화소를 지닌 EOS 5Ds의<br>
-                    해상력을 능가합니다.
-                </p>
-                <p class="p2">
-                    뛰어난 성능으로 전문 포토그래퍼와 비디오그래퍼들이<br>
-                    사용함에 부족함이 없고, 하이아마추어나 취미 촬영을<br>
-                    즐기시는 분들에게 결과물을 한 단계 더 발전시켜줄 바디입니다.
-                </p>
-            </div>
-        </div>
+    <div class="button">
+        <a href="trip.html" class="return">목록으로</a>
     </div>
+
 
     <div id="footer">
         <div class="foot_inner">

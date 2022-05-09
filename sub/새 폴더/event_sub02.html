@@ -5,20 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=1320">
     <title>Dollytour</title>
-    <link rel="stylesheet" href="../css/camera.css">
+    <link rel="stylesheet" href="../css/event_sub02.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/footer.css">
 
     <!--header제이쿼리-->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <!--header제이쿼리-->
-
-    <!--카메라슬라이드css(링크),제이쿼리(스크립트)-->>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="../js/script.js"></script>
-    
-    <!--슬라이드제이쿼리-->>
 </head>
 <body>
     <div id="header">
@@ -77,21 +70,21 @@
                 <div class="mar">
                     <div class="mar_inner">
                     <ul class="sub sub5">
-                        <li><a href="about.html">DollyTour는</a></li>
+                        <li><a href="sub/about.html">DollyTour는</a></li>
                     </ul>
                     <ul class="sub sub1">
-                        <li><a href="trip_sub01.html">제주</a></li>
-                        <li><a href="trip_sub01.html">부산</a></li>
-                        <li><a href="trip_sub01.html">강원</a></li>
+                        <li><a href="sub/trip_sub01.html">제주</a></li>
+                        <li><a href="sub/trip_sub01.html">부산</a></li>
+                        <li><a href="sub/trip_sub01.html">강원</a></li>
                     </ul>
                     <ul class="sub sub2">
-                        <li><a href="camera.html">Dolly's카메라</a></li>
+                        <li><a href="sub/camera.html">Dolly's카메라</a></li>
                     </ul>
                     <ul class="sub sub3">
-                        <li><a href="event.html">진행중인 이벤트</a></li>
+                        <li><a href="sub/event.html">진행중인 이벤트</a></li>
                     </ul>
                     <ul class="sub sub4">
-                        <li><a href="message.html">후기</a></li>
+                        <li><a href="sub/message.html">후기</a></li>
                     </ul>
                 </div>
                 </div>
@@ -127,67 +120,66 @@
 
     <div id="event_main">
         <div class="event_text">
-            <p class="main_p1">DollyTour's 카메라</p>
-            <p class="main_p2">돌리투어와 여행을 떠날 때<br>카메라와 함께 떠나보세요</p>
+            <p class="main_p1">DollyTour's 이벤트</p>
+            <p class="main_p2">돌리투어의 새로운 이벤트를 만나보세요</p>
         </div>
     </div>
 
-    <div id="canon">
-        <div class="canon_top" data-aos="fade-down" data-aos-duration="1500">
-            <h3>Canon EOS R5</h3>
-            <div class="canon_top_right">
-                <img src="../images/sub1/canon_line.jpg" alt="">
-            </div>
-        </div>
-        <div class="canon_bot">
-            <div class="canon_bot_left" data-aos="fade-right" data-aos-duration="1500">
-                <img src="../images/sub1/canon_img.png" alt="">
-            </div>
-            <div class="canon_bot_right" data-aos="fade-left" data-aos-duration="1500">
-                <p class="p1">
-                    EOS R5의 이미지 센서, 영상 엔진 및 렌즈는 해상도, 노이즈<br>
-                    및 기타 광학적 특성을 포함한 이미지의 전반적인 측면을<br>
-                    최적화했습니다. 이로 인해 실제 픽셀 수를 초과하는 해상력을<br>
-                    가질 수 있게 되었고 약 5,060만 화소를 지닌 EOS 5Ds의<br>
-                    해상력을 능가합니다.
-                </p>
-                <p class="p2">
-                    뛰어난 성능으로 전문 포토그래퍼와 비디오그래퍼들이<br>
-                    사용함에 부족함이 없고, 하이아마추어나 취미 촬영을<br>
-                    즐기시는 분들에게 결과물을 한 단계 더 발전시켜줄 바디입니다.
-                </p>
-            </div>
+    <div id="event_list">
+        <h2>진행중인 이벤트</h2>
+        <div class="event_text">
+            <table class="event_box" cellspacing="0">
+                <tr class="box1" colspan="2">
+                    <td class="td1">제목</td>
+                    <td class="td2">2022 돌리투어 서포터즈 모집</td>
+                </tr>
+                <tr class="box2">
+                    <td class="td1">날짜</td>
+                    <td class="td2">22. 04. 01 ~ 22. 12. 31</td>
+                </tr>
+                <tr class="box3">
+                    <td colspan="2">
+                        <div class="box_img">
+                            <img src="../images/sub1/sub02.jpg" alt="">
+                        </div>
+                    </td>
+                </tr>
+                <div class="sel">
+                    <input type='checkbox' class="jeju"
+                        name='animal' 
+                        value='dog'
+                        onclick='checkOnlyOne(this)'/>
+                    <input type='checkbox' class="busan"
+                        name='animal' 
+                        value='cat' 
+                        onclick='checkOnlyOne(this)'/>
+                    <input type='checkbox' class="gang"
+                        name='animal' 
+                        value='rabbit' 
+                        onclick='checkOnlyOne(this)'/>
+                </div>
+                <script>
+                    function checkOnlyOne(element) {
+              
+                    const checkboxes 
+                        = document.getElementsByName("animal");
+              
+                    checkboxes.forEach((cb) => {
+                        cb.checked = false;
+                     })
+              
+                    element.checked = true;
+                    }
+                </script>
+            
+                <a href="javascript:alert('제출이 완료되었습니다.');" onfocus="this.blur()" class="select">
+                    제출
+                </a>
+            </table>
         </div>
     </div>
-
-    <div id="camera_back"></div>
-
-    <div id="sony">
-        <div class="sony_top" data-aos="fade-down" data-aos-duration="1500">
-            <h3>Sony α 7c</h3>
-            <div class="sony_top_left">
-                <img src="../images/sub1/sony_line.jpg" alt="">
-            </div>
-        </div>
-        <div class="sony_bot">
-            <div class="sony_bot_right" data-aos="fade-left" data-aos-duration="1500">
-                <img src="../images/sub1/sony_img.png" alt="">
-            </div>
-            <div class="sony_bot_left" data-aos="fade-right" data-aos-duration="1500">
-                <p class="p1">
-                    EOS R5의 이미지 센서, 영상 엔진 및 렌즈는 해상도, 노이즈<br>
-                    및 기타 광학적 특성을 포함한 이미지의 전반적인 측면을<br>
-                    최적화했습니다. 이로 인해 실제 픽셀 수를 초과하는 해상력을<br>
-                    가질 수 있게 되었고 약 5,060만 화소를 지닌 EOS 5Ds의<br>
-                    해상력을 능가합니다.
-                </p>
-                <p class="p2">
-                    뛰어난 성능으로 전문 포토그래퍼와 비디오그래퍼들이<br>
-                    사용함에 부족함이 없고, 하이아마추어나 취미 촬영을<br>
-                    즐기시는 분들에게 결과물을 한 단계 더 발전시켜줄 바디입니다.
-                </p>
-            </div>
-        </div>
+    <div class="button">
+        <a href="event.html" class="return">목록으로</a>
     </div>
 
     <div id="footer">
