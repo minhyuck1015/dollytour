@@ -47,100 +47,7 @@ body{
     color: #2e2e2e;
     min-width: 1320px;
 }
-#header.header-scrolled {
-    background: rgba(255, 255, 255, 0.8);
-    transition: all 0.5s;
-  }
-#header{
-    height: 80px;
-    position: fixed;
-    left: 0;
-    top: 0;
-    right: 0;
-    transition: all 0.5s;
-    z-index: 997;
-    background-color: #fff;
-}
-.header_inner{
-    height: 70px;
-    width: 1320px;
-    margin: 15px auto;
-}
-.logo{
-    float: left;
-    margin-left: 15px;
-    margin-top: 5px;
-}
-.nav{
-    float: right;
-    margin-right: 157px;
-}
-.nav> li{
-    float: left;
-    margin-left: 30px;
-    margin-top: 10px;
-    font-size: 20px;
-}
-.nav> li> a{
-    padding: 0 30px;
-    display: block;
-}
-.nav> li:nth-child(5){
-    margin-right: -100px;
-}
-.nav> li> a:hover{
-    color: #a1b5e6;
-}
-.nav> li:hover .sub{
-    display: block;
-}
-.sub{
-    text-align: center;
-    font-size: 16px;
-    z-index: 995;
-    position: absolute;
-}
-.sub5{
-    left: 585px;
-    top: -50px;
-}
-.sub1{
-    left: 770px;
-    top: -50px;
-}
-.sub2{
-    left: 890px;
-    top: -50px;
-}
-.sub3{
-    left: 1028px;
-    top: -50px;
-}
-.sub4{
-    left: 1202px;
-    top: -50px;
-}
-.sub li{
-    margin-bottom: 10px;
-}
-.sub li a:hover{
-    color: #a1b5e6;
-}
-.panel{
-    padding: 60px 0;
-    display: none;
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.mar{
-    width: 1320px;
-    margin: auto;
-    position: relative;
-}
+
 /*header*/
 #event_main{
     margin-top: 44px;
@@ -164,122 +71,68 @@ body{
     font-size: 18px;
     padding-top: 30px;
 }
-/*footer*/
-#footer{
-    height: 280px;
-    background-color: #474747;
-}
-.hr{
-    border-bottom: 2px solid #707070;
-}
-.foot_inner{
-    width: 1300px;
-    margin: 0 auto;
-    position: relative;
-    height: 135px;
-}
-.foot_inner ul{
-    padding-top: 90px;
-}
-.foot_inner ul li{
-    float: left;
-    text-align: center;
-    margin-right: 120px;
-}
-.foot_inner ul li:nth-child(7){
-    margin-right: -20px;
-}
-.foot_inner ul li a{
-    color: #adadad;
-    font-family: 'IBMPlexSansKR-Regular';
-    font-size: 14px;
-}
-.foot_logo{
-    margin: 30px auto;
-    position: absolute;
-    left: 50%;
-    margin-left: -100px;
-}
-.foot_down{
-    width: 1300px;
-    margin: 0 auto;
-}
-.foot_text{
-    float: left;
-    margin-top: 20px;
-    color: #adadad;
-    font-size: 12px;
-    font-family: 'IBMPlexSansKR-Regular';
-}
-.foot_sns{
-    float: right;
-    margin-top: 20px;
-}
-.foot_sns li{
-    float: left;
-    margin: 0 10px;
-}
-.foot_sns li:nth-child(4){
-    padding-right: 10px;
-}
-/*footer*/
+
 #about_top{
-    background: url(../images/sub1/about_top.jpg) no-repeat center top;
-    height: 789px;
-    width: 100%;
+    background: url(../images/sub1/about_top.jpg) no-repeat center bottom;
+
+    height: 700px;
+    /* width: 100%; */
     margin-top: 44px;
 }
 .about_top_text{
     width: 1320px;
     margin: 0 auto;
+    padding: 75px 0 0 300px;
+    box-sizing: border-box;
 }
 .big_blue{
+    font-weight: 900;
     color: #233c6d;
+    font-size: 32px;
 }
 .att1{
-    font-size: 66px;
-    line-height: 100px;
+    font-size: 50px;
+    line-height: 59px;
     font-family: 'IBMPlexSansKR-Regular';
-    margin: 175px 0 0 175px;
+    
+    font-weight: 900;
+    
 }
 .att2{
-    margin: 20px 0 0 175px;
+    margin: 20px 0;
     font-family: 'IBMPlexSansKR-Regular';
-    font-size: 20px;
-    line-height: 43px;
-    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+    color: #484e5b;
 }
 #about_middle{
-    height: 720px;
+    height: 512px;
 }
-.about_img{
-    width: 100%;
-    margin: 0 auto;
-}
+
 .abimg1{
-    width: 50%;
+    width: 60%;
     float: left;
     background: url(../images/sub1/about_middle_left.jpg) no-repeat top right;
     overflow: hidden;
-    height: 585px;
+    height: 522px;
 }
 .abimg2{
-    width: 50%;
+    width: 40%;
     float: right;
-    background: url(../images/sub1/about_middle_right.jpg) no-repeat top 300px left 250px;
-    height: 691px;
+    background: url(../images/sub1/about_middle_right.jpg) no-repeat top 216px left 71px;
+    height: 607px;
 }
 .about_middle_text{
-    width: 1320px;
-    position: relative;
-    margin: 0 auto;
+
     text-align: center;
     color: #192845;
 }
 .amt{
     position: absolute;
-    top: 70px;
-    right: 70px;
+    top: 22px;
+    left: 50px;
+    text-align: left;
 }
 .amt1{
     font-size: 72px;
@@ -291,6 +144,7 @@ body{
 .amt3{
     font-size: 50px;
     line-height: 72px;
+    padding-left: 30px;
 }
 .amt4{
     line-height: 90px;
@@ -306,43 +160,55 @@ body{
     z-index: 1;
     top: 84px;
     left: 150px;
+    height: 456px;
+    overflow: hidden;
 }
 .about_img4{
     position: absolute;
     z-index: 10;
     left: 485px;
-    top: 364px;
+    top: 350px;
+    box-shadow: -5px -5px 12px rgb(0 0 0 / 20%);
+    height: 260px;
+    overflow: hidden;
 }
 .abt_top{
     position: absolute;
-    left: 782px;
+    left: 910px;
     top: 138px;
     font-family: 'IBMPlexSansKR-Regular';
     font-weight: bold;
     color: #192845;
+    text-align: right;
 }
 .abt1{
-    font-size: 97px;
+    font-size: 75px;
+    padding-top: 43px;
 }
 .abt_small{
     font-size: 60px;
 }
 .abt2{
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 45px;
-    line-height: 40px;
+    line-height: 25px;
+    font-weight: 400;
+    color: #7f7f83;
 }
 .abt3{
-    line-height: 30px;
+    line-height: 24px;
     font-weight: bold;
+    font-size: 14px;
 }
 .abt_bot{
-    font-family: 'IBMPlexSansKR-Regular';
+    font-family: 'IBMPlexSansKR-Light';
     position: absolute;
-    left: 900px;
-    top: 360px;
+    right: 54px;
+    top: 365px;
     font-size: 16px;
     line-height: 28px;
+    width: 399px;
+    text-align: right;
 }
 #about_tour{
     width: 1320px;
@@ -369,9 +235,18 @@ body{
     font-size: 20px;
     margin-top: 50px;
 }
+.box_2 span{
+    font-family: 'IBMPlexSansKR-bold';
+    font-size: 15px;
+    padding-left: 3px;
+    color: #697e97;
+}
 .box_3{
-    font-family: 'IBMPlexSansKR-Regular';
-    font-size: 16px;
-    line-height: 20px;
+    font-family: 'IBMPlexSansKR-Light';
+    /* font-size: 16px; */
+    /* line-height: 24px; */
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 22px;
     margin-top: 20px;
 }
